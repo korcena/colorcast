@@ -21,6 +21,10 @@ export interface ColorProfile {
   blindSpot: string;
   fear: string;
   description: string;
+  perceived: string;
+  adaptTo: string;
+  stressFactors: string;
+  growthArea: string;
   bg: string;
   accent: string;
   textAccent: string;
