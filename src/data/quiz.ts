@@ -115,6 +115,14 @@ export const colorProfiles: Record<ColorKey, ColorProfile> = {
     fear: 'Losing control',
     description:
       'You are a natural leader who thrives on challenges. Direct and fast-moving, you get things done and dislike wasted time. You inspire action in others simply by stepping forward — but remember, slowing down occasionally builds deeper trust.',
+    perceived:
+      'Others often see you as confident, decisive, and in charge — but also as pushy, blunt, or even intimidating. Your directness can come across as dismissiveness, even when you don\'t intend it.',
+    adaptTo:
+      'Be direct and get to the point fast. Skip lengthy introductions and focus on outcomes. Show respect for their time, give them ownership, and avoid micromanaging. Let them lead.',
+    stressFactors:
+      'Indecision, slow progress, lack of control, being undermined, inefficiency, or having to rely on others who don\'t deliver.',
+    growthArea:
+      'Practice active listening before jumping to solutions. Slowing down to understand others\' perspectives won\'t cost you results — it will improve them.',
     bg: '#FEE2E2',
     accent: '#E24B4A',
     textAccent: '#B91C1C',
@@ -131,6 +139,14 @@ export const colorProfiles: Record<ColorKey, ColorProfile> = {
     fear: 'Being ignored',
     description:
       'Energetic and charismatic, you love ideas and people. Naturally persuasive and optimistic, you lift the energy in any room. Your enthusiasm is contagious — just watch out for starting more than you finish.',
+    perceived:
+      'Others see you as fun, inspiring, and full of energy — but sometimes as scattered, unreliable, or too talkative. They may wonder if your enthusiasm will actually translate into follow-through.',
+    adaptTo:
+      'Give them the spotlight and let them brainstorm freely. Keep interactions upbeat and social. Avoid drowning them in details or routine tasks — let them sell, pitch, and connect.',
+    stressFactors:
+      'Routine, isolation, rigid rules, being ignored or dismissed, repetitive tasks, and environments with no room for creativity or fun.',
+    growthArea:
+      'Work on follow-through. Your ideas are valuable — but finishing what you start is what turns vision into real impact. Build in accountability structures that help you stay on track.',
     bg: '#FEF3C7',
     accent: '#EF9F27',
     textAccent: '#92400E',
@@ -147,6 +163,14 @@ export const colorProfiles: Record<ColorKey, ColorProfile> = {
     fear: 'Change & conflict',
     description:
       'Steady, empathetic, and an excellent listener, you are deeply loyal and dependable. People feel safe around you. Your consistency holds teams together — learning to speak up when it matters will amplify your impact.',
+    perceived:
+      'Others see you as warm, reliable, and easy to be around — but sometimes as passive, indecisive, or a pushover. They may take your kindness for granted without realizing how much you contribute.',
+    adaptTo:
+      'Be patient and give them time to adjust to change. Avoid pressure, sudden surprises, or aggressive tones. Build trust gradually, show genuine care, and never force quick decisions.',
+    stressFactors:
+      'Sudden change, interpersonal conflict, aggression, being forced into fast decisions, or feeling unappreciated after giving a lot of themselves.',
+    growthArea:
+      'Learn to voice your needs and set boundaries. Avoiding conflict protects short-term harmony but creates long-term resentment. Your perspective deserves to be heard.',
     bg: '#DCFCE7',
     accent: '#639922',
     textAccent: '#166534',
@@ -163,6 +187,14 @@ export const colorProfiles: Record<ColorKey, ColorProfile> = {
     fear: 'Being wrong',
     description:
       'You value facts and precision and think deeply before acting. You catch what others miss and set high standards. Your thoroughness protects teams from costly errors — trusting your analysis enough to act sooner will multiply your influence.',
+    perceived:
+      'Others see you as smart, thorough, and dependable — but also as cold, overly critical, or slow to act. Your high standards can sometimes feel like a barrier rather than an asset to those around you.',
+    adaptTo:
+      'Provide data, logic, and clear structure. Give them time to think and ask questions. Avoid vagueness, rushing, or emotional appeals — they respond to evidence, not enthusiasm.',
+    stressFactors:
+      'Disorganization, vague instructions, emotional decision-making, being rushed, lack of quality control, or having to work with sloppy or careless people.',
+    growthArea:
+      'Trust your analysis and act. Perfectionism can become paralysis — recognize when "good enough" is actually excellent, and that timely decisions beat perfect ones made too late.',
     bg: '#DBEAFE',
     accent: '#378ADD',
     textAccent: '#1E40AF',

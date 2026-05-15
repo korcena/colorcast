@@ -33,6 +33,23 @@ function TraitCard({ label, value, accent, bg }: TraitCardProps) {
   );
 }
 
+interface InfoSectionProps {
+  title: string;
+  text: string;
+  icon: string;
+}
+
+function InfoSection({ title, text, icon }: InfoSectionProps) {
+  return (
+    <div className="bg-white rounded-2xl border border-gray-100 p-5 shadow-sm">
+      <h2 className="text-sm font-semibold text-gray-600 uppercase tracking-wide mb-3 flex items-center gap-2">
+        <span>{icon}</span> {title}
+      </h2>
+      <p className="text-sm text-gray-600 leading-relaxed">{text}</p>
+    </div>
+  );
+}
+
 export default function Results({ scores, onRetake }: Props) {
   const sorted = getSortedColors(scores);
   const primaryKey = sorted[0];
@@ -44,7 +61,7 @@ export default function Results({ scores, onRetake }: Props) {
   const combination = getCombinationInsight(primaryKey, secondaryKey);
 
   return (
-    <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4 py-10">
       <div className="w-full max-w-lg flex flex-col gap-4">
         {/* Header card */}
         <div
@@ -127,13 +144,40 @@ export default function Results({ scores, onRetake }: Props) {
           />
         </div>
 
-        {/* Description */}
-        <div className="bg-white rounded-2xl border border-gray-100 p-5 shadow-sm">
-          <h2 className="text-sm font-semibold text-gray-600 uppercase tracking-wide mb-3">
-            About You
-          </h2>
-          <p className="text-sm text-gray-600 leading-relaxed">{primary.description}</p>
-        </div>
+        {/* About You */}
+        <InfoSection
+          icon="🪞"
+          title="About You"
+          text={primary.description}
+        />
+
+        {/* How others perceive you */}
+        <InfoSection
+          icon="👀"
+          title="How Others Perceive You"
+          text={primary.perceived}
+        />
+
+        {/* How to adapt to you */}
+        <InfoSection
+          icon="🤝"
+          title="How to Adapt to You"
+          text={primary.adaptTo}
+        />
+
+        {/* Stress factors */}
+        <InfoSection
+          icon="⚡"
+          title="Stress Factors"
+          text={primary.stressFactors}
+        />
+
+        {/* Where can you be better */}
+        <InfoSection
+          icon="🌱"
+          title="Where You Can Grow"
+          text={primary.growthArea}
+        />
 
         {/* Combination insight */}
         {combination && (
